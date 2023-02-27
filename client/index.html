@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="kebot.gif" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>si-KEBOT</title>
+  <meta name="description"
+    content="si-KEBOT adalah model pemrosesan bahasa alami (NLP) yang menggunakan pembelajaran mendalam untuk menghasilkan percakapan seperti manusia. Itu dilatih pada kumpulan data besar dari data percakapan dan dapat digunakan untuk menghasilkan respons terhadap input pengguna secara real-time. si-KEBOT dapat digunakan untuk berbagai aplikasi, seperti chatbot layanan pelanggan, asisten virtual, dan dukungan pelanggan otomatis.    ">
+  <meta name="keywords" content="si-KEBOT, chat gpt, ai chat, chatbot">
+  <meta name="author" content="Benny Adrianto" />
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div id="app">
+    <div class="hero">
+      <h1>si-KEBOT</h1>
+	  <h3><center>Chatbot dengan kecerdasan buatan</center></h3>
+      <div class="col-3">
+        <div class="card">
+          <h2>
+            Contoh
+          </h2>
+          <button id="button_data" data-area="Jelaskan tentang teori big bang secara sederhana">"Jelaskan tentang teori big bang secara sederhana" →</button>
+          <button id="button_data" data-area="Punya ide kreatif untuk acara reuni sma?">"Punya ide kreatif untuk acara reuni sma ?" →</button>
+          <button id="button_data" data-area="Bagaimana cara membuat kode otentifikasi OTP di Javascript?">"Bagaimana cara membuat kode otentifikasi OTP di Javascript?" →</button>
+        </div>
+        <div class="card">
+          <h2>
+            Kemampuan
+          </h2>
+          <span>Mengingat apa yang dikatakan pengguna sebelumnya dalam percakapan</span>
+          <span>Memungkinkan pengguna memberikan koreksi tindak lanjut</span>
+          <span>Terlatih untuk menolak permintaan yang tidak pantas</span>
+        </div>
+        <div class="card">
+          <h2>
+            Limitasi / Pembatasan
+          </h2>
+          <span>Mungkin terkadang menghasilkan informasi yang salah</span>
+          <span>Mungkin terkadang menghasilkan instruksi yang berbahaya atau konten yang bias</span>
+          <span>Pengetahuan terbatas tentang dunia dan peristiwa , dan hanya dapat memproses data dan informasi yang ada di internet</span>
+        </div>
+      </div>
+    </div>
+    <div id="chat_container"></div>
+    <form>
+      <textarea name="prompt" placeholder="Tanya ke si-KEBOT" id="form_fill"></textarea>
+      <button type="submit"><img src="assets/images/send.svg" alt="send"></button>
+    </form>
+  </div>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>
